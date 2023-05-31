@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Collection</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container mx-auto py-8">
+      <h1 class="text-4xl font-bold mb-4">My Book Collection</h1>
+      <form id="addBookForm" class="flex">
+        <input
+          type="text"
+          id="bookName"
+          class="mr-2 py-2 px-3 border border-gray-300"
+          placeholder="Enter book name"
+        />
+        <button
+          type="submit"
+          class="py-2 px-4 bg-blue-500 text-white font-semibold"
+        >
+          Add Book
+        </button>
+      </form>
+      <div id="bookList" class="mt-4">
+        <div class="book"></div>
+      </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
